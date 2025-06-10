@@ -1,0 +1,152 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  height: 40px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.filters {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filtersInput {
+  padding: 6px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.scheduleGrid {
+  display: grid;
+  border: 1px solid #ccc;
+  user-select: none;
+  overflow-x: auto;
+}
+
+.headerCell {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 8px;
+  background: #f5f5f5;
+  font-weight: bold;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.timeCell {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+  background: #f5f5f5;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.invalidTimeMessage {
+  background-color: #ffe5e5;
+  color: #b00020;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.noDoctors {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.doctorName {
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 8px;
+  background: #fafafa;
+  font-weight: 600;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.timeSlot {
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+  height: 40px;
+  transition: background-color 0.3s;
+  background: white;
+}
+
+.busy {
+  background: #d9534f;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  /* min-width: 200px; */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal h3 {
+    margin: 0
+}
+
+.modal input {
+    margin-top: 10px
+}
+
+.modalButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.slotText {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  padding: 2px;
+}
+
+
